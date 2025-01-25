@@ -11,6 +11,74 @@
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css">
 </head>
+
+<!-- CSS -->
+<style>
+    .hero {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      color: white;
+      text-align: center;
+    }
+  
+    .hero-video {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover; /* Asegura que el video cubra toda la sección */
+      z-index: -1; /* Coloca el video detrás del contenido */
+    }
+  
+    .hero-content {
+      z-index: 2;
+      max-width: 800px;
+      padding: 20px;
+      text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+    }
+  
+    .hero h1 {
+      font-size: 3rem;
+      margin-bottom: 20px;
+    }
+  
+    .hero p {
+      font-size: 1.2rem;
+      margin-bottom: 30px;
+    }
+  
+    .cta-buttons a {
+      margin: 10px;
+      padding: 15px 30px;
+      font-size: 1rem;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+    }
+  
+    .btn-primary {
+      background-color: #1e1e1e; /* Fondo oscuro */
+      color: white;
+      border: 2px solid transparent;
+    }
+  
+    .btn-secondary {
+      background-color: transparent;
+      color: white;
+      border: 2px solid white;
+    }
+  
+    .cta-buttons a:hover {
+      background-color: #f0f0f0;
+      color: #1e1e1e;
+    }
+  </style>
+
+
 <body>
 
     <!--Navbar-->
@@ -27,11 +95,33 @@
         </nav>
         <a class="btn" href="#Fundadores"><button>Info</button></a>
     </header>
+
+
+
+
+    <!-- Hero Section -->
+<section class="hero">
+    <div class="hero-content">
+      <h1>Redefine el Lujo en Cada Kilómetro</h1>
+      <p>Descubre la experiencia BMW: vehículos de alto rendimiento, diseño exclusivo y tecnología avanzada, todo a tu alcance.</p>
+      <div class="cta-buttons">
+        <a href="#models" class="btn-primary">Explorar Modelos</a>
+        <a href="#test-drive" class="btn-secondary">Solicitar Test Drive</a>
+      </div>
+    </div>
+    <!-- Video Background -->
+    <video class="hero-video" autoplay muted loop>
+      <source src="BMW.mp4" type="video/mp4"> <!-- Reemplaza esta ruta con tu video -->
+      Your browser does not support the video tag.
+    </video>
+  </section>
     
 
                                                                              <!--Efecto hover-->
     <div class="navbara" id="Inicio">
+        <center>
         <h1>BMW</h1>
+    </center>
     </div> 
      <div class="container2">
         <div class="card2">
@@ -51,7 +141,9 @@
     
                                                                             <!--Animadas-->
     <div class="navbara" id="Iconicos">
+        <center>
         <h1>Los Mas Iconicos</h1>
+    </center>
     </div>    
     <div class="contenedor">
         
@@ -100,7 +192,10 @@
 <br>
 <br>                                                                 <!--INDEX-->
 <div class="navbara" id="Fundadores">
-    <h2>Fundadores</h2>
+    <center>
+    <h2>Creador
+    </h2>
+</center>
 </div>   
 <br>
 <br>
@@ -118,68 +213,23 @@
     <div class="card-container1">
         <div class="card1">
           <div class="front1">
-              <img src="https://venturebeat.com/wp-content/uploads/2011/05/seamus-blackley.jpg"&quot; width="270" alt="Seamus Blackley">
+              <img src="https://media.production.jlrms.com/alf/images/2019-06/c19d6cfc-694e-4f25-a180-1759b3061045/joeeberhardtjlrpresident.jpg?VersionId=BURgw2kPOs0vbfoQHZQiY9Bw2V9lBxpV"; width="250" alt="Joachim Eberhardt">
           </div>
           <div class="back1">
             <div class="details1">
               <div class="caption1">
-                Es un físico y diseñador de videojuegos estadounidense. También se conoce su trayectoria como exagente de Creative Artists Agency donde fungió como representante de los creadores de videojuegos. Es mejor conocido por crear y diseñar la Xbox original en 2001.
+                Fue uno de los principales ingenieros responsables del desarrollo del icónico BMW 3 Series (E30), que fue un gran éxito a nivel mundial y sigue siendo un modelo emblemático de la marca. Su enfoque en la calidad de manejo, la ingeniería de chasis y el equilibrio entre rendimiento y confort definió el estándar para los modelos deportivos de BMW en los años 80 y 90.
               </div>
-              <h2>Seamus Blackley</h2>
+              <h2>Joachim Eberhardt</h2>
               <span>Creador</span>
   
-              <div class="social-icon1">
-                <a href="#"><i class="fab fa-facebook"></i></a>
-                <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                <a href="#"><i class="fab fa-instagram"></i></a>
-                <a href="#"><i class="fab fa-pinterest"></i></a>
+        
               </div>
             </div>
           </div>
         </div>
   
-        <div class="card1">
-          <div class="front1">
-            <img src="https://www.giantbomb.com/a/uploads/scale_small/1/16944/1238417-ken_kutaragi.jpg"&quot; width="270"
-              alt="Ken Kutaragi" />
-          </div>
-          <div class="back1">
-            <div class="details1">
-              <div class="caption1">
-                <p>Es el exdirector y director ejecutivo de Sony Computer Entertainment (SCEI), la división de videojuegos de Sony Corporation. Se le conoce como "El Padre de la PlayStation" y sus sucesores y spin-offs, como la PlayStation 2, PocketStation, PlayStation 3, y PlayStation Portable. Ken Kutaragi actualmente es el director ejecutivo de Cellius.</p>
-              </div>
-              <h2>Ken Kutaragi</h2>
-              <span>Creador</span>
-            </div>
-          </div>
-        </div>
   
-        <div class="card1">
-          <div class="front1">
-            <img src="https://media.gettyimages.com/id/488173742/es/foto/kyoto-japan-portrait-of-japanese-video-games-designer-and-producer-shigeru-miyamoto.jpg?s=612x612&w=gi&k=20&c=dVaQlKkFEhsKYmfEl-_I0dpd-wBAX97RCKm7UApnDpU="&quot; width="240"
-              alt="Shigeru Miyamoto" />
-          </div>
-          <div class="back1">
-            <div class="details1">
-              <div class="caption1">
-                <p>Es un diseñador y productor de videojuegos japonés que trabaja para Nintendo desde 1977. 
-                    Es considerado como «el padre de los videojuegos modernos»
-                    por haber creado algunas de las franquicias más influyentes de la industria, entre las que se encuentran 
-                    Mario, Donkey Kong, The Legend of Zelda, Star Fox, Pikmin y F-Zero.</p>
-              </div>
-              <h2>Shigeru Miyamoto</h2>
-              <span>Creador</span>
-  
-              <div class="social-icon1">
-                <a href="#"><i class="fab fa-facebook"></i></a>
-                <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                <a href="#"><i class="fab fa-instagram"></i></a>
-                <a href="#"><i class="fab fa-pinterest"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
 
 
                                                                                 <!--SUSCRIPCIONES-->
@@ -187,7 +237,10 @@
 
       <section>
         <div class="navbara" id="Suscripciones">
-            <h2>Lujos</h2>
+<Center>
+            <h2>Nuestras suscripciones </h2>
+            <p>Cada plan superior tambien incluye los beneficios del anterior.</p>
+        </Center>
         </div>
         <div class="container-fluid">
             <div class="container">
@@ -196,7 +249,7 @@
                         <div class="card text-center">
                             <div class="title">
                                 <img src="Basico.png" alt="Basico" width="250">
-                                <h2>Xbox Game Pass</h2>
+                                <h2>Basico</h2>
                             </div>
                             <div class="price">
                                 <h4>
@@ -206,16 +259,16 @@
                             <div class="option">
                                 <ul>
                                     <li>
-                                        <i class="fas fa-check"></i> Xbox online
+                                        <i class="fas fa-check"></i> Diseño moderno y responsivo
                                     </li>
                                     <li>
-                                        <i class="fas fa-check"></i> +100 video games
+                                        <i class="fas fa-check"></i> Galería de vehículos interactiva
                                     </li>
                                     <li>
-                                        <i class="fas fa-check"></i> support for cellphone
+                                        <i class="fas fa-check"></i> Formulario de contacto directo
                                     </li>
                                     <li>
-                                        <i class="fas fa-times"></i> 1 month
+                                        <i class="fas fa-times"></i> Ubicación de concesionarios en el mapa
                                     </li>
                                 </ul>
                             </div>
@@ -227,7 +280,7 @@
                             <div class="title">
                                 <img src="Medio.png" alt="Medio+" width="200">
 
-                                <h2>Medio+</h2>
+                                <h2>Gama</h2>
                             </div>
                             <div class="price">
                                 <h4>
@@ -237,16 +290,16 @@
                             <div class="option">
                                 <ul>
                                     <li>
-                                        <i class="fas fa-check"></i> PS online
+                                        <i class="fas fa-check"></i> Configurador de vehículos en línea
                                     </li>
                                     <li>
-                                        <i class="fas fa-check"></i> +20 video games
+                                        <i class="fas fa-check"></i> Integración de video y contenido multimedia
                                     </li>
                                     <li>
-                                        <i class="fas fa-check"></i> support for Ps4
+                                        <i class="fas fa-check"></i> Chat en vivo 24/7
                                     </li>
                                     <li>
-                                        <i class="fas fa-times"></i> 1 month
+                                        <i class="fas fa-times"></i> Sistema de reservas de test drive online
                                     </li>
                                 </ul>
                             </div>
@@ -267,16 +320,16 @@
                             <div class="option">
                                 <ul>
                                     <li>
-                                        <i class="fas fa-check"></i> Switch online
+                                           <i class="fas fa-check"></i> Modelos Exclusivos BMW
                                     </li>
                                     <li>
-                                        <i class="fas fa-check"></i> 4 retro consoles with +75 games
+                                        <i class="fas fa-check"></i> Test Drive Privado
                                     </li>
                                     <li>
-                                        <i class="fas fa-check"></i> support for  Switch new games
+                                        <i class="fas fa-check"></i> Entrega VIP
                                     </li>
                                     <li>
-                                        <i class="fas fa-check"></i> 1 year
+                                        <i class="fas fa-check"></i> Eventos VIP
                                     </li>
                                 </ul>
                             </div>
@@ -287,6 +340,20 @@
             </div>
         </div>
     </section>
+
+    <!-- Footer -->
+<footer class="footer-pasta">
+    <div class="footer-content-burger">
+      <div class="footer-logo-sushi">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/BMW_logo_%28gray%29.svg/480px-BMW_logo_%28gray%29.svg.png" alt="BMW Logo" width="50"/> <!-- Reemplaza con tu logo -->
+      </div>
+    
+    </div>
+    <div class="footer-bottom-ramen">
+      <p>&copy; 2025 BMW. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
 
 
 </body>
